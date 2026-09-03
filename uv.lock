@@ -666,7 +666,7 @@ version = "3.2.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "importlib-metadata", marker = "python_full_version >= '3.9' or (extra == 'extra-9-lakebench-daft' and extra == 'extra-9-lakebench-duckdb') or (extra == 'extra-9-lakebench-daft' and extra == 'extra-9-lakebench-polars')" },
-    { name = "pyspark", version = "3.5.8", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.9' or (extra == 'extra-9-lakebench-daft' and extra == 'extra-9-lakebench-duckdb') or (extra == 'extra-9-lakebench-daft' and extra == 'extra-9-lakebench-polars')" },
+    { name = "pyspark", version = "3.5.9", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.9' or (extra == 'extra-9-lakebench-daft' and extra == 'extra-9-lakebench-duckdb') or (extra == 'extra-9-lakebench-daft' and extra == 'extra-9-lakebench-polars')" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/38/06/a64cc4e17fe959cf60dc126bf3283fc9f22fc91f000b7f3f5e465338022d/delta-spark-3.2.0.tar.gz", hash = "sha256:641967828e47c64805f8c746513da80bea24b5f19b069cdcf64561cd3692e11d", size = 22147, upload-time = "2024-05-09T17:26:10.754Z" }
 wheels = [
@@ -1189,7 +1189,7 @@ wheels = [
 
 [[package]]
 name = "lakebench"
-version = "1.2.0"
+version = "1.2.1"
 source = { editable = "." }
 dependencies = [
     { name = "fsspec" },
@@ -1224,11 +1224,11 @@ sail = [
     { name = "deltalake", version = "1.6.2", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
     { name = "pyarrow", version = "21.0.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
     { name = "pysail", marker = "python_full_version >= '3.10'" },
-    { name = "pyspark", version = "4.1.1", source = { registry = "https://pypi.org/simple" }, extra = ["connect"], marker = "(python_full_version >= '3.10' and extra == 'extra-9-lakebench-sail') or (extra == 'extra-9-lakebench-sail' and extra == 'extra-9-lakebench-spark') or (extra == 'extra-9-lakebench-daft' and extra == 'extra-9-lakebench-duckdb') or (extra == 'extra-9-lakebench-daft' and extra == 'extra-9-lakebench-polars') or (extra == 'extra-9-lakebench-daft' and extra == 'extra-9-lakebench-sail')" },
+    { name = "pyspark", version = "4.2.0", source = { registry = "https://pypi.org/simple" }, extra = ["connect"], marker = "(python_full_version >= '3.10' and extra == 'extra-9-lakebench-sail') or (extra == 'extra-9-lakebench-sail' and extra == 'extra-9-lakebench-spark') or (extra == 'extra-9-lakebench-daft' and extra == 'extra-9-lakebench-duckdb') or (extra == 'extra-9-lakebench-daft' and extra == 'extra-9-lakebench-polars') or (extra == 'extra-9-lakebench-daft' and extra == 'extra-9-lakebench-sail')" },
 ]
 spark = [
     { name = "delta-spark", marker = "python_full_version >= '3.9' or (extra == 'extra-9-lakebench-daft' and extra == 'extra-9-lakebench-duckdb') or (extra == 'extra-9-lakebench-daft' and extra == 'extra-9-lakebench-polars')" },
-    { name = "pyspark", version = "3.5.8", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.9' or (extra == 'extra-9-lakebench-daft' and extra == 'extra-9-lakebench-duckdb') or (extra == 'extra-9-lakebench-daft' and extra == 'extra-9-lakebench-polars')" },
+    { name = "pyspark", version = "3.5.9", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.9' or (extra == 'extra-9-lakebench-daft' and extra == 'extra-9-lakebench-duckdb') or (extra == 'extra-9-lakebench-daft' and extra == 'extra-9-lakebench-polars')" },
 ]
 sparkmeasure = [
     { name = "sparkmeasure", marker = "python_full_version >= '3.9' or (extra == 'extra-9-lakebench-daft' and extra == 'extra-9-lakebench-duckdb') or (extra == 'extra-9-lakebench-daft' and extra == 'extra-9-lakebench-polars') or (extra == 'extra-9-lakebench-daft' and extra == 'extra-9-lakebench-sail') or (extra == 'extra-9-lakebench-sail' and extra == 'extra-9-lakebench-spark')" },
@@ -1271,9 +1271,9 @@ requires-dist = [
     { name = "pyarrow", marker = "python_full_version >= '3.10' and extra == 'duckdb'", specifier = ">=16.0.0" },
     { name = "pyarrow", marker = "python_full_version >= '3.10' and extra == 'polars'", specifier = ">=16.0.0" },
     { name = "pyarrow", marker = "python_full_version >= '3.10' and extra == 'sail'", specifier = ">=16.0.0" },
-    { name = "pysail", marker = "python_full_version >= '3.10' and extra == 'sail'", specifier = ">=0.7.0" },
+    { name = "pysail", marker = "python_full_version >= '3.10' and extra == 'sail'", specifier = ">=0.7.1" },
     { name = "pyspark", marker = "python_full_version >= '3.9' and extra == 'spark'", specifier = ">=3.5.0,<4.0.0" },
-    { name = "pyspark", extras = ["connect"], marker = "python_full_version >= '3.10' and extra == 'sail'", specifier = ">=4.0.0" },
+    { name = "pyspark", extras = ["connect"], marker = "python_full_version >= '3.10' and extra == 'sail'", specifier = ">=4.2.0" },
     { name = "sparkmeasure", marker = "python_full_version >= '3.9' and extra == 'sparkmeasure'", specifier = "==0.28.0" },
     { name = "sqlglot", specifier = "==26.30.0" },
     { name = "tenacity", marker = "python_full_version < '3.9'", specifier = ">=8.2.3,<9" },
@@ -2220,20 +2220,20 @@ wheels = [
 
 [[package]]
 name = "pysail"
-version = "0.7.0"
+version = "0.7.1"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/3c/f3/3b7ebad447b43f888ff678d0cd6c0d2b69c8f1412b91c417c8794052e357/pysail-0.7.0.tar.gz", hash = "sha256:93551f92f832c0f90b7a913f90103fd4333c06075c0e6550d52744d78d00d7ff", size = 3302189, upload-time = "2026-08-03T13:15:30.594Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/cc/00/ce8f3508abcf06e2457eaf82f1ef7e66a38b18e4e570dc672de3d8223640/pysail-0.7.1.tar.gz", hash = "sha256:7d7ad335e1c8542c0df98b54700751bfa10b51a5223f0831825b96522df4ac26", size = 3585861, upload-time = "2026-08-24T13:22:50.032Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/56/97/adb98367a47703c69c2512132bd7b8845747109bdf632fca086a888f2ee4/pysail-0.7.0-cp38-abi3-macosx_10_12_x86_64.whl", hash = "sha256:6e9e7b4b693cee9e04a21e86b714834738656517f088945f41623abe98b18420", size = 54416624, upload-time = "2026-08-03T13:15:12.824Z" },
-    { url = "https://files.pythonhosted.org/packages/6d/7e/11744ae642c3f75540f553628b90614b17820463d7ce0825dd16bf145575/pysail-0.7.0-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:b9a6912147f181cec21e272056a0a0669ada7311195441982a7bf89d006a4a22", size = 50598771, upload-time = "2026-08-03T13:15:15.817Z" },
-    { url = "https://files.pythonhosted.org/packages/6e/6c/8cbe71173fa226120f802145b4e762062c0d3970b916ceaffe89bee0723b/pysail-0.7.0-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:b952cf718d2fbc670cdcb7a1662dd79f35f217be8badf7e4d7138a32bb475bec", size = 55583286, upload-time = "2026-08-03T13:15:18.757Z" },
-    { url = "https://files.pythonhosted.org/packages/e5/4a/c271eba2310091149cd117465b15a09a8c136e94099400b1997399137db1/pysail-0.7.0-cp38-abi3-manylinux_2_24_aarch64.whl", hash = "sha256:7bf65e4741bee6f4b4c75e902f8662a7d867b4a5e493b28b8e22988b28e2efad", size = 52535074, upload-time = "2026-08-03T13:15:21.552Z" },
-    { url = "https://files.pythonhosted.org/packages/a1/5f/693b8b34a14bc9169c6b5290d185620fa286d6909ae471770a6cbe01a9d8/pysail-0.7.0-cp38-abi3-win_amd64.whl", hash = "sha256:e76ff2c945d1d14ee6eadad9f3429dbdcd137a2bf267b98fc49c666216562a8f", size = 61358452, upload-time = "2026-08-03T13:15:28.255Z" },
+    { url = "https://files.pythonhosted.org/packages/ea/a6/006caf84465aa9c0d502b2b81157ed1c03ed6c5816a1f54902144bde1c58/pysail-0.7.1-cp38-abi3-macosx_10_12_x86_64.whl", hash = "sha256:2117edb62a08b11321d7442b2b6f55cc785e064a8f89ed72074122ee47442eb6", size = 56055694, upload-time = "2026-08-24T13:22:31.966Z" },
+    { url = "https://files.pythonhosted.org/packages/03/73/566755afe12f186fefb4aed8560e9ff31d80877e72b1a13b055996f06e02/pysail-0.7.1-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:ab265f8f9e10c44d5c533a071cee0938dc42b291341473b8441b16c727d52917", size = 52113186, upload-time = "2026-08-24T13:22:35.505Z" },
+    { url = "https://files.pythonhosted.org/packages/3a/17/940716d4eecc275e4caafa70f73033eb468317f63fe8784eb51e3a97a694/pysail-0.7.1-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:360410b168608effc5ac80af478861cc27f6dc17172c11b3200f346dd448d7c9", size = 57298946, upload-time = "2026-08-24T13:22:39.009Z" },
+    { url = "https://files.pythonhosted.org/packages/8d/6e/aba6026cc0916d9ed99fad9d584076d6a9652ccef71939b3b933be65ec55/pysail-0.7.1-cp38-abi3-manylinux_2_24_aarch64.whl", hash = "sha256:61ffe5d970b2b273c326df1579c7bf262dc4e148013d6d0c592fb7c097ff9ae9", size = 54150621, upload-time = "2026-08-24T13:22:42.888Z" },
+    { url = "https://files.pythonhosted.org/packages/fd/04/95aa5db17c616a9fef7f751576057d70720eaa65d716c355eac7a353ea22/pysail-0.7.1-cp38-abi3-win_amd64.whl", hash = "sha256:c59a352aa079280f766cf4881940b2edb1621e89477a05448405e10d6bd254fa", size = 63520089, upload-time = "2026-08-24T13:22:46.903Z" },
 ]
 
 [[package]]
 name = "pyspark"
-version = "3.5.8"
+version = "3.5.9"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
     "python_full_version >= '3.11'",
@@ -2243,11 +2243,11 @@ resolution-markers = [
 dependencies = [
     { name = "py4j", marker = "python_full_version >= '3.9' or (extra == 'extra-9-lakebench-daft' and extra == 'extra-9-lakebench-duckdb') or (extra == 'extra-9-lakebench-daft' and extra == 'extra-9-lakebench-polars')" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/80/5a/3806f44eb47387e8af803508cdd6bbc0df784febf4dc010700be04a1ff89/pyspark-3.5.8.tar.gz", hash = "sha256:54cca0767b21b40e3953ad1d30f8601c53abf9cbda763653289cdcfcac52313c", size = 317817299, upload-time = "2026-01-15T11:46:14.487Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/95/ce/81e53e729790556e3983e95de1a7d5df91a34adfcd34b5a5ab0e0c6e9b33/pyspark-3.5.9.tar.gz", hash = "sha256:ea27adc39ddac9413b8951e45aa748cbed6c785971b81386efc41938f6243d93", size = 317858593, upload-time = "2026-07-16T08:52:04.494Z" }
 
 [[package]]
 name = "pyspark"
-version = "4.1.1"
+version = "4.2.0"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
     "python_full_version >= '3.14' and sys_platform == 'win32'",
@@ -2261,7 +2261,7 @@ resolution-markers = [
 dependencies = [
     { name = "py4j", marker = "python_full_version >= '3.10'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/19/bf/58ee13add151469c25825b7125bbf62c3bdcec05eec4d458fcb5c5516066/pyspark-4.1.1.tar.gz", hash = "sha256:77f78984aa84fbe865c717dd37b49913b4e5c97d76ef6824f932f1aefa6621ec", size = 455359625, upload-time = "2026-01-09T09:38:38.28Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/c3/33/c987434f5d50aa802779a004ca0fd45ee4350caab50554ad7283d5a22b50/pyspark-4.2.0.tar.gz", hash = "sha256:5ad689d53570ee1674193fd4f9bda065f0db3be9363a27d2a3406cc457b70b61", size = 450129423, upload-time = "2026-07-14T22:16:46Z" }
 
 [package.optional-dependencies]
 connect = [
